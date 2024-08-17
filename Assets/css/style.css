@@ -1,8 +1,10 @@
+/* General styling for making sure elements use the entire box including padding and borders */
+
 * {
   box-sizing: border-box;
 }
 
-/* brand color palette */
+/* Defining color variables to create a consistent color palette throughout the website */
 :root {
   --primary: rgba(68, 88, 119, 1);
   --secondary: rgba(146, 204, 206, 1);
@@ -10,6 +12,7 @@
   --dark: rgba(28, 29, 33, 1);
   --light: rgba(238, 238, 247, 1);
 }
+/* Styling for the body - main typeface, text color, and background color */
 
 body {
   margin: 0;
@@ -19,6 +22,7 @@ body {
   background-color: var(--light);
   line-height: 1.5;
 }
+/* Resetting margin for header tags to maintain consistency */
 
 h1,
 h2,
@@ -28,10 +32,12 @@ h5,
 h6 {
   margin: 0;
 }
+/* Resetting margin for paragraph tags */
 
 p {
   margin: 0;
 }
+/* Styling the header - layout, background, and box shadow */
 
 header {
   padding: 15px 6% 15px 0;
@@ -43,6 +49,7 @@ header {
   background-color: var(--tertiary);
   box-shadow: 0 5px 35px rgba(209, 31, 31, 0.4);
 }
+/* Styling the main title inside the header */
 
 header h1 {
   color: var(--tertiary);
@@ -52,12 +59,14 @@ header h1 {
   font-size: 4vw;
   line-height: 1;
 }
+/* Styling for the navigation bar */
 
 nav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
+/* Styles for each link inside the navigation bar, including a unique hover effect */
 
 nav a {
   text-decoration: none;
@@ -71,23 +80,29 @@ nav a {
   transition: all 0.25s ease-in;
   font-size: 1.4rem;
 }
+/* Hover effect for navigation links */
 
 nav a:hover {
   background-size: 100% 100%;
   color: var(--primary);
 }
+/* Removes margin from the last navigation link */
 
 nav a:last-child {
   margin-right: 0;
 }
+/* Space at the top of the main content to provide separation from header */
 
 main {
   margin-top: 20px;
   margin-bottom: 45px;
 }
+/* Styling for blue links */
+
 .link {
   color:blue
 }
+/* Hero banner styling with background image and gradient */
 
 .hero-banner {
   background:(232, 9, 9);
